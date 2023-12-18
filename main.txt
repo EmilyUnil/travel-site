@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel site</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ro-boto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">.
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo2.png" alt="Логотип сайта">
+            <ul>
+                <a href="#" title="На главную"><li>Главная</li></a>
+                <a href="#" title="Что мы можем"><li>Услуги</li></a>
+                <a href="#" title="Классные фото"><li>Галерея</li></a>
+                <a href="#" title="Позвоните нам"><li>Контакты</li></a>
+                <a href="#" title="Кто мы такие"><li>О нас</li></a>
+            </ul>
+            <div id="hamburger" class="icon ">&#9776;</div>
+        </nav>
+
+        <main>
+          <section id="top">
+                <img class="top-image" src="img/02.jpg" alt="обложка">
+            </section>
+
+            <section class="services" id="services">
+                <h1> Как с нами связаться?</h1>
+                <div class="delimiter"></div>
+                <p>Нас можно найти здесь</p>
+                <div class="services-cont">
+                    <div class="cont-row">
+                        <div class="row-item">
+                            <img src="img/001-facebook.png" alt="facebook">
+                            <a href="#" title=""><h2>facebook</h2></a>
+                        </div>
+                     <div class="row-item">
+                            <img src="img/004-linkedin.png" alt="linkedin">
+                            <a href="#" title=""><h2>linkedin</h2></a>
+                        </div>
+                        <div class="row-item">
+                            <img src="img/005-instagram.png" alt="instagram">
+                            <a href="#" title=""><h2>instagram</h2></a>
+                        </div>
+                        <div class="row-item">
+                            <img src="img/007-twitter.png" alt="twitter">
+                           <a href="#" title=""><h2>twitter</h2></a>
+                         </div>
+                        <div class="row-item">
+                            <img src="img/010-tumblr.png" alt="tumblr">
+                            <a href="#" title=""><h2>tumblr</h2></a>
+                         </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact" id="contact"> 
+              <h2 class="main-title">Контактная форма</h2>
+              <div class="delimiter"></div>
+              <p class="main-title-description">С радостью ответим на ваши вопросы</p>
+
+              <form id ="contactform" method="post" action="conract.php" class="contact-form">
+                <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+                <input name="email" type="email" class="col" placeholder="E-mail адрес" required>
+                <input name="theme" type="text" class="col" placeholder="Тема сообщения" required>
+                <input name="name" type="tel" class="col" placeholder="Номер телефона" required>
+                <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+                
+                <span class="row-col check">
+                  <input id="accept" type="checkbox" class="" required>
+                  <label for="accept">Я прочитал(а) и принимаю условия
+                    <a href="#">Пользовательского соглашения</a>
+                  </label>
+                </span>
+
+                <input  type="submit"  id="submit" class="submit btn" value="Отправить сообщение">
+              </form>
+            </section>
+
+            <section class="portfolio" id="portfolio">
+              <h2 class="main-title">Что мы предлагаем?</h2>
+               <div class="delimiter"></div> 
+                  <p class="main-title-description">Большое разнообразие стран</p>
+              <div class="portfolio-container">
+
+              <div class="portfolio-item" style="background-image: url('img/photo03.jpg')">
+                <div class="description-container">
+                  <p class="portfolio-title">Нидерланды</p>
+                  <p class="portfolio-description">Уникальная архитектура</p>
+                </div>
+              </div>
+
+              <div class="portfolio-item" style="background-image: url('img/photo05.jpg')">
+                <div class="description-container">
+                  <p class="portfolio-title">Бразилия</p>
+                  <p class="portfolio-description">Тропические леса</p>
+                </div>
+              </div>
+
+              <div class="portfolio-item" style="background-image: url('img/photo01.jpg')">
+                <div class="description-container">
+                  <p class="portfolio-title">Австрия</p>
+                  <p class="portfolio-description">Изысканная гастрономия</p>
+                </div>
+              </div>
+
+              <div class="portfolio-item" style="background-image: url('img/photo02.jpg')">
+                <div class="description-container">
+                  <p class="portfolio-title">Швейцария</p>
+                  <p class="portfolio-description">Культурное наследие</p>
+                </div>
+              </div>
+
+              <div class="portfolio-item" style="background-image: url('img/photo02.jpeg')">
+                <div class="description-container">
+                  <p class="portfolio-title">Франция</p>
+                  <p class="portfolio-description">Столица мировой моды</p>
+                </div>
+              </div>
+
+              <div class="portfolio-item" style="background-image: url('img/photo04.jpg')">
+                <div class="description-container">
+                  <p class="portfolio-title">Китай</p>
+                  <p class="portfolio-description">Лидер в области технологий</p>
+                </div>
+              </div>
+            </div>
+
+            <section class="overlay">
+                <h2 class=".main-title">Подробности</h2>
+                <div class="delimiter"></div>
+                <p class="main-title-description"></p>
+                <button class="common-button" type="button" name="button">узнать</button>
+              </section>
+        </main>
+        <footer> 
+          <div class="brand">
+            <!-- <img src="img/logo2.png" alt="Логотип сайта"> -->
+          <span>TRAVEL SITE</span>
+            </div>
+            <nav>
+              <ul class="menu">
+                <a href="#top" class="menu-element" data-link="top" title="На главную"><li>Главная</li></a>
+                <a href="#services" class="menu-element" data-link="services" title="Позвоните нам"><li>Контакты</li></a>
+                <a href="#portfolio" class="menu-element" data-link="portfolio" title="Классные фоточки"><li>Галерея</li></a>
+                
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="#" title="facebook" target="_blank">
+              <img  class="social-img" src="img/001-facebook.png" alt="facebook">
+            </a>
+            <a href="#" title="linkedin" target="_blank">
+              <img  class="social-img" src="img/004-linkedin.png" alt="linkedin">
+            </a>
+            <a href="#" title="instagram" target="_blank">
+              <img  class="social-img"  src="img/005-instagram.png" alt="instagram">
+            </a>
+            <a href="#" title="twitter" target="_blank">
+              <img  class="social-img" src="img/007-twitter.png" alt="twitter">
+            </a>
+            <a href="#" title="tumblr" target="_blank">
+              <img  class="social-img" src="img/010-tumblr.png" alt="tumblr">
+            </a>
+         </div>
+         <div class="copyright">© First Adventure | Travel Page 2023</div>
+    </header>
+    <footer>
+</body>
+</html>
