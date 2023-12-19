@@ -1,4 +1,4 @@
-
+// переключение слайдов
 $(document).ready(() => {
     let currentSlide = 0;
     let isBusy = false;
