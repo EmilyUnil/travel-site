@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 header {
-  background: #0b0b10;
+  background: #6c7790;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -15,7 +15,6 @@ body {
 }
 
 header nav {
-   background-color: #6c7790;  
     /* background-color: #1c356f; */
     display: flex;
     justify-content: space-between;
@@ -420,7 +419,6 @@ footer nav a:hover {
   cursor: default;
   background-color: #ce416e;
 }
-О НАС
 .about-contact span:first-child{
   flex: 1;
   flex-grow: 1;
